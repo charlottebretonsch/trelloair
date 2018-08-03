@@ -38,8 +38,8 @@ h1,
 h2,
 h3,
 p,
-a,
-p.small {
+p.small,
+a {
   font-weight: inherit;
 }
 h1 {
@@ -54,28 +54,37 @@ h3 {
   font-size: 24px;
   line-height: 30px;
 }
+.logo {
+  font-size: 24px;
+  line-height: 24px;
+}
 a,
 p {
   font-size: 16px;
   line-height: 24px;
 }
 p.small {
-  font-size: 12px;
-  line-height: 20px;
-}
-.logo {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 18px;
 }
 a.button {
   background: #ff7979;
   font-weight: 700;
-  padding: 16px 24px;
+  padding: 12px 20px;
   display: inline-block;
   border-radius: 4px;
+  color: #fff;
 }
 a.button:hover {
-  background-color: #ff7171;
+  background-color: #ff6a6a;
+}
+a.inlinelink {
+  display: inline-block;
+  font-size: inherit;
+  border-bottom: 1px solid #628f92;
+}
+a.inlinelink:hover {
+  border-bottom: 1px solid #567e80;
 }
 section,
 footer,
@@ -87,16 +96,40 @@ footer .content,
 header .content {
   width: 856px;
   margin: auto;
-  padding: 24px 0;
+}
+header {
+  background: #00242a;
+  color: #fff;
+  text-align: left;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  z-index: 8;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+}
+header a.inlinelink {
+  margin: 1px 0;
+  line-height: 16px;
+}
+footer {
+  background: #f1f1f1;
+  padding: 48px 0 88px 0;
+}
+section p a.inlinelink {
+  margin: 2px 0;
+  line-height: 20px;
 }
 section.primary {
   height: 844px;
   background-image: url("./assets/mountains.png");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center top;
   color: #fff;
-  padding: 64px 0 24px 0;
+  padding: 88px 0 48px 0;
+  margin-top: 80px;
 }
 section.primary img {
   margin-top: 48px;
@@ -107,8 +140,8 @@ section.primary p {
   margin: 16px 0 24px 0;
 }
 section.secondary {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 section.secondary h2 {
   margin-bottom: 16px;
@@ -118,8 +151,4 @@ section.secondary h3 {
 }
 section.secondary img {
   width: 100%;
-}
-footer {
-  background: #f1f1f1;
-  padding: 24px 0 64px 0;
 }

@@ -13,6 +13,7 @@ grid-fullwidth = grid-size*214
 color-dark = #00242A
 color-light = #FFFFFF
 color-accent = #FF7979
+color-medium = #628f92
 color-background = #F1F1F1
 
 
@@ -60,7 +61,7 @@ a
 
 // Text
 
-h1, h2, h3, p, a, p.small
+h1, h2, h3, p, p.small, a
   font-weight inherit
 
 h1
@@ -75,18 +76,17 @@ h3
   font-size grid-size*6
   line-height grid-size*7.5
 
+.logo
+  font-size grid-size*6
+  line-height grid-size*6
+
 a, p
   font-size grid-size*4
   line-height grid-size*6
 
 p.small
-  font-size grid-size*3
-  line-height grid-size*5
-
-.logo
-
-  font-size grid-size*5
-  line-height grid-size*7
+  font-size grid-size*3.5
+  line-height grid-size*4.5
 
 
 
@@ -96,16 +96,25 @@ p.small
 a.button
   background color-accent
   font-weight 700
-  padding grid-size*4 grid-size*6
+  padding grid-size*3 grid-size*5
   display inline-block
   border-radius grid-size
+  color color-light
 
   &:hover
-    background-color darken(color-accent, 2%)
+    background-color darken(color-accent, 4%)
+
+a.inlinelink
+  display inline-block
+  font-size inherit
+  border-bottom 1px solid color-medium
+
+  &:hover
+    border-bottom 1px solid darken(color-medium, 12%)
 
 
 
-// Sections
+// General
 
 section, footer, header
   width 100%
@@ -113,16 +122,57 @@ section, footer, header
   .content
     width grid-fullwidth
     margin auto
-    padding grid-size*6 0
+
+
+
+// Header
+
+header
+  background color-dark
+  color color-light
+  text-align left
+  padding grid-size*4 0
+  position fixed
+  top 0
+  z-index 8
+
+  .content
+    display flex
+    justify-content space-between
+
+  a.inlinelink
+    margin grid-size*0.25 0
+    line-height grid-size*4
+
+
+
+
+// Footer
+
+footer
+  background color-background
+  padding grid-size*12 0 grid-size*22 0
+
+
+
+
+// Sections
+
+section
+
+  p
+    a.inlinelink
+      margin grid-size*0.5 0
+      line-height grid-size*5
 
 section.primary
   height grid-size*211
   background-image url("./assets/mountains.png")
   background-repeat no-repeat
-  background-size cover
   background-position center top
   color color-light
-  padding grid-size*16 0 grid-size*6 0
+  padding grid-size*22 0 grid-size*12 0
+  margin-top grid-size*20
 
   img
     margin-top grid-size*12
@@ -134,8 +184,8 @@ section.primary
 
 
 section.secondary
-  padding-top grid-size*10
-  padding-bottom grid-size*10
+  padding-top grid-size*16
+  padding-bottom grid-size*16
 
   // &:first-child
   //   padding-top grid-size*6
@@ -152,9 +202,8 @@ section.secondary
   img
     width 100%
 
-footer
-  background color-background
-  padding grid-size*6 0 grid-size*16 0
+
+
 
 
 
