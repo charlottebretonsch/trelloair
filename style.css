@@ -1,3 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
 body {
-  background: #ff0;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #00242a;
+  margin: auto;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+img {
+  display: block;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  display: block;
+}
+h1,
+h2,
+h3,
+p,
+a,
+p.small {
+  font-weight: inherit;
+}
+h1 {
+  font-size: 56px;
+  line-height: 70px;
+}
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+a,
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+p.small {
+  font-size: 12px;
+  line-height: 20px;
+}
+.logo {
+  font-size: 20px;
+  line-height: 28px;
+}
+a.button {
+  background: #ff7979;
+  font-weight: 700;
+  padding: 16px 24px;
+  display: inline-block;
+  border-radius: 4px;
+}
+a.button:hover {
+  background-color: #ff7171;
+}
+section {
+  width: 100%;
+}
+section .content {
+  width: 856px;
+  margin: auto;
+  padding: 88px 0;
+}
+section.primary {
+  height: 844px;
+  background-image: url("./assets/mountains.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: #fff;
+}
+section.primary img {
+  margin-top: 48px;
+  position: absolute;
+  width: 856px;
+}
+section.primary p {
+  margin: 16px 0 24px 0;
 }

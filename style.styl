@@ -1,2 +1,138 @@
+// Import
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700');
+
+
+
+
+// Variables
+
+grid-size = 4px
+grid-fullwidth = grid-size*214
+
+color-dark = #00242A
+color-light = #FFFFFF
+color-accent = #FF7979
+color-background = #F1F1F1
+
+
+
+
+// Set up
+
+*
+  margin 0
+  padding 0
+  text-decoration none
+  outline none
+  border none
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+html
+  height 100%
+  font-size 62.5%
+
 body
-  background yellow
+  height 100%
+  font-family 'Source Sans Pro', sans-serif
+  font-weight 300
+  text-align center
+  color color-dark
+  margin auto
+
+li
+  list-style none
+  display inline-block
+
+img
+  display block
+
+a
+  color inherit
+  cursor pointer
+  display block
+
+
+
+
+// Text
+
+h1, h2, h3, p, a, p.small
+  font-weight inherit
+
+h1
+  font-size grid-size*14
+  line-height grid-size*17.5
+
+h2
+  font-size grid-size*10
+  line-height grid-size*12.5
+
+h3
+  font-size grid-size*6
+  line-height grid-size*7.5
+
+a, p
+  font-size grid-size*4
+  line-height grid-size*6
+
+p.small
+  font-size grid-size*3
+  line-height grid-size*5
+
+.logo
+
+  font-size grid-size*5
+  line-height grid-size*7
+
+
+
+
+// Actions
+
+a.button
+  background color-accent
+  font-weight 700
+  padding grid-size*4 grid-size*6
+  display inline-block
+  border-radius grid-size
+
+  &:hover
+    background-color darken(color-accent, 2%)
+
+
+
+// Sections
+
+section
+  width 100%
+
+  .content
+    width grid-fullwidth
+    margin auto
+    padding grid-size*22 0
+
+section.primary
+  height grid-size*211
+  background-image url("./assets/mountains.png")
+  background-repeat no-repeat
+  background-size cover
+  background-position center top
+  color color-light
+
+  img
+    margin-top grid-size*12
+    position absolute
+    width grid-fullwidth
+
+  p
+    margin grid-size*4 0 grid-size*6 0
+
+
+
+
+// End
