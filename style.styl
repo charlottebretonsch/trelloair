@@ -112,6 +112,18 @@ a.inlinelink
   &:hover
     border-bottom 1px solid darken(color-medium, 12%)
 
+p.small
+
+  a.inlinelink
+    margin grid-size*0.25 0
+    line-height grid-size*4
+
+p
+  a.inlinelink
+    margin grid-size*0.5 0
+    line-height grid-size*5
+
+
 
 
 // General
@@ -140,10 +152,6 @@ header
     display flex
     justify-content space-between
 
-  a.inlinelink
-    margin grid-size*0.25 0
-    line-height grid-size*4
-
 
 
 
@@ -153,17 +161,15 @@ footer
   background color-background
   padding grid-size*12 0 grid-size*22 0
 
+  a.inlinelink
+    border-color color-dark
+
+    &:hover
+      border-color darken(color-dark, 8%)
 
 
 
 // Sections
-
-section
-
-  p
-    a.inlinelink
-      margin grid-size*0.5 0
-      line-height grid-size*5
 
 section.primary
   height grid-size*211
@@ -182,16 +188,15 @@ section.primary
   p
     margin grid-size*4 0 grid-size*6 0
 
-
 section.secondary
-  padding-top grid-size*16
-  padding-bottom grid-size*16
+  padding-top grid-size*6
+  padding-bottom grid-size*6
 
-  // &:first-child
-  //   padding-top grid-size*6
+  &:nth-of-type(2)
+    padding-top grid-size*18
 
-  // &:last-child
-  //   padding-bottom grid-size*6
+  &:last-of-type
+    padding-bottom grid-size*18
 
   h2
     margin-bottom grid-size*4
