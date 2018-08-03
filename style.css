@@ -102,3 +102,12 @@ section.primary img {
 section.primary p {
   margin: 16px 0 24px 0;
 }
+section.secondary h2 {
+  margin-bottom: 16px;
+}
+section.secondary h3 {
+  margin: 16px 0 24px 0;
+}
+section.secondary img {
+  width: 100%;
+}
