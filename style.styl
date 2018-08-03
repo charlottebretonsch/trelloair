@@ -34,11 +34,12 @@ color-background = #F1F1F1
   -moz-osx-font-smoothing: grayscale;
 
 html
+  width 100%
   height 100%
-  font-size 62.5%
 
 body
   height 100%
+  width 100%
   font-family 'Source Sans Pro', sans-serif
   font-weight 300
   text-align center
@@ -189,26 +190,44 @@ section.primary
     margin grid-size*4 0 grid-size*6 0
 
 section.secondary
-  padding-top grid-size*6
-  padding-bottom grid-size*6
+  padding-top grid-size*14
+  padding-bottom grid-size*16
+  border-bottom 2px solid color-background
 
   &:nth-of-type(2)
     padding-top grid-size*18
 
   &:last-of-type
     padding-bottom grid-size*18
+    border-bottom 0
 
   h2
-    margin-bottom grid-size*4
+    margin-bottom grid-size*3
 
   h3
-    margin grid-size*4 0 grid-size*6 0
+    margin grid-size*3 0 grid-size*8 0
 
   img
     width 100%
 
+.blocks
+  width 100%
+  display flex
+  flex-direction row
+  margin-top grid-size*8
 
+  .block
+    margin-right grid-size*6
+    width 33.3%
 
+    &:last-child
+      margin-right 0
+
+    h3
+      margin 0 0 grid-size*3 0 !important
+
+    p
+      margin 0 0 grid-size*5 0 !important
 
 
 
