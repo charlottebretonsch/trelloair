@@ -42,7 +42,6 @@ body
   font-weight 300
   text-align center
   color color-dark
-  margin auto
 
 li
   list-style none
@@ -108,13 +107,13 @@ a.button
 
 // Sections
 
-section
+section, footer, header
   width 100%
 
   .content
     width grid-fullwidth
     margin auto
-    padding grid-size*22 0
+    padding grid-size*6 0
 
 section.primary
   height grid-size*211
@@ -123,6 +122,7 @@ section.primary
   background-size cover
   background-position center top
   color color-light
+  padding grid-size*16 0 grid-size*6 0
 
   img
     margin-top grid-size*12
@@ -132,7 +132,16 @@ section.primary
   p
     margin grid-size*4 0 grid-size*6 0
 
+
 section.secondary
+  padding-top grid-size*10
+  padding-bottom grid-size*10
+
+  // &:first-child
+  //   padding-top grid-size*6
+
+  // &:last-child
+  //   padding-bottom grid-size*6
 
   h2
     margin-bottom grid-size*4
@@ -142,6 +151,10 @@ section.secondary
 
   img
     width 100%
+
+footer
+  background color-background
+  padding grid-size*6 0 grid-size*16 0
 
 
 

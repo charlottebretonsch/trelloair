@@ -21,7 +21,6 @@ body {
   font-weight: 300;
   text-align: center;
   color: #00242a;
-  margin: auto;
 }
 li {
   list-style: none;
@@ -78,13 +77,17 @@ a.button {
 a.button:hover {
   background-color: #ff7171;
 }
-section {
+section,
+footer,
+header {
   width: 100%;
 }
-section .content {
+section .content,
+footer .content,
+header .content {
   width: 856px;
   margin: auto;
-  padding: 88px 0;
+  padding: 24px 0;
 }
 section.primary {
   height: 844px;
@@ -93,6 +96,7 @@ section.primary {
   background-size: cover;
   background-position: center top;
   color: #fff;
+  padding: 64px 0 24px 0;
 }
 section.primary img {
   margin-top: 48px;
@@ -102,6 +106,10 @@ section.primary img {
 section.primary p {
   margin: 16px 0 24px 0;
 }
+section.secondary {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 section.secondary h2 {
   margin-bottom: 16px;
 }
@@ -110,4 +118,8 @@ section.secondary h3 {
 }
 section.secondary img {
   width: 100%;
+}
+footer {
+  background: #f1f1f1;
+  padding: 24px 0 64px 0;
 }
