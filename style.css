@@ -260,3 +260,8 @@ section.secondary img {
     margin: 0;
   }
 }
+@media (min-width: 1600px) {
+  section.primary {
+    background-size: cover;
+  }
+}
