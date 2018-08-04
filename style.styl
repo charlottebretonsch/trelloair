@@ -105,6 +105,18 @@ a.button
   &:hover
     background-color darken(color-accent, 4%)
 
+a.button.icon
+  padding grid-size*2 grid-size*5
+  background-image url("./assets/github.png")
+  background-repeat no-repeat
+  background-position center center
+  background-size 24px
+  height grid-size*12
+  width grid-size*12
+
+  &:hover
+    background-color darken(color-accent, 4%)
+
 a.inlinelink
   display inline-block
   font-size inherit
@@ -136,6 +148,10 @@ section, footer, header
     width grid-fullwidth
     margin auto
 
+  aside.action
+    display flex
+
+
 
 
 // Header
@@ -153,6 +169,8 @@ header
     display flex
     justify-content space-between
 
+  a.button
+    margin-left grid-size*2
 
 
 
@@ -167,6 +185,12 @@ footer
 
     &:hover
       border-color darken(color-dark, 8%)
+
+  p
+    margin-bottom grid-size*2
+
+    &:last-child
+      margin 0
 
 
 

@@ -79,6 +79,18 @@ a.button {
 a.button:hover {
   background-color: #ff6a6a;
 }
+a.button.icon {
+  padding: 8px 20px;
+  background-image: url("./assets/github.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  height: 48px;
+  width: 48px;
+}
+a.button.icon:hover {
+  background-color: #ff6a6a;
+}
 a.inlinelink {
   display: inline-block;
   font-size: inherit;
@@ -106,6 +118,11 @@ header .content {
   width: 856px;
   margin: auto;
 }
+section aside.action,
+footer aside.action,
+header aside.action {
+  display: flex;
+}
 header {
   background: #00242a;
   color: #fff;
@@ -119,6 +136,9 @@ header .content {
   display: flex;
   justify-content: space-between;
 }
+header a.button {
+  margin-left: 8px;
+}
 footer {
   background: #f1f1f1;
   padding: 48px 0 88px 0;
@@ -128,6 +148,12 @@ footer a.inlinelink {
 }
 footer a.inlinelink:hover {
   border-color: #002127;
+}
+footer p {
+  margin-bottom: 8px;
+}
+footer p:last-child {
+  margin: 0;
 }
 section.primary {
   height: 844px;
