@@ -1,6 +1,6 @@
 # Trello Air
-Find out more about Trello Air: https://trelloair.charlottebretonsch.com/
+Give your tasks space to breathe
+A Chrome Stylus theme for Trello.com
 
-
-## Theme
-You can find the code of the stylus theme in stylus.css
+## Find out more
+https://trelloair.charlottebretonsch.com/
